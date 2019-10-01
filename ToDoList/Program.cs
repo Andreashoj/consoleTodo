@@ -73,7 +73,7 @@ namespace ToDoList
             }
 
 
-            Console.WriteLine("\r\nSkriv command-task eks. 2-Køb kebab");
+            Console.WriteLine("\r\nSkriv din næste command..");
 
             var consoleCommand = int.Parse(Console.ReadLine());
             ToDoItem item = new ToDoItem();
@@ -125,7 +125,7 @@ namespace ToDoList
             }
         }
 
-        private List<ToDoItem> remove(int itemIndex, List<ToDoItem> toDoList)
+        List<ToDoItem> remove(int itemIndex, List<ToDoItem> toDoList)
         {
             toDoList.RemoveAt(itemIndex);
             List<ToDoItem> newToDoList = new List<ToDoItem>();
